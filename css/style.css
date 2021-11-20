@@ -1,0 +1,9 @@
+.jumbotron{
+	height:70vh;
+	background-size:cover;
+	padding:100px;
+	color:white;
+}
+.star{
+	transform:scale(.5);
+}
