@@ -4,66 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vinyl Records</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <!-- header -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar font navbar-expand-md navbar-dark bg-prime d-flex justify-content-md-around">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="img-responsive logo my-0" alt="logo" src="img/logo.png">
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler ham" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse mx-4" id="collapsibleNavbar">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link font" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <a class="nav-link font" href="#">Featured</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link font" href="#">Contact</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
+
   </div>
+
 </nav>
 <!-- end header -->
+<nav class="navbar fixed-top  d-flex justify-content-end">
+  <p class = "counter font">0</p>
+  <img class="img-responsive logo my-0 mx-2" alt="shopping cart" src="img/cart.png">
+</nav>
+
 
 
 <!-- jumbotron-->
-  <div  class="jumbotron" style="background-image: url(img/banner.jpg)"height="300">
-      <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <div  class="jumbotron" style="background-image: url(img/banner.jpg);">
+      <h1 class="display-4 font-3">Vinyl Records</h1>
+        <p class="lead">Bring back the classic sounds of the turntable</p>
+        <p>Absorb the true essence of music.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg mx-auto" href="#" role="button">Shop vinyl</a>
         </p>
     </div>
     <img class="star img-fluid my-4 mx-auto d-block" src="img/stars.png" alt="rating stars" >
 <!-- reviews -->
     <section class="container mt-4">
-      <div class="row d-flex justify-content-between m-x-auto">
+      <div class="row d-flex justify-content-between ">
         <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 18rem;">
           <img class="card-img-top" src="img/p2.jpg" alt="Card image cap">
           <div class="card-body">
@@ -72,8 +68,8 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card col-sm-8 col-lg-4 " style="width: 18rem;">
-          <img class="card-img-top" src="img/p1.jpg" alt="Card image cap">
+        <div class="mx-auto  card col-sm-8 col-lg-4 " style="width: 18rem;">
+          <img class="card-img-top " src="img/p1.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -90,14 +86,14 @@
         </div>
       </div>
     </section>
-    <section class="container text-center mt-5">
-      <h1 mx-auto>Shop Now</h1>
+    <section class="container text-center my-5 font">
+      <h1>Shop Now</h1>
       <hr>
     </section>
     <!-- products -->
         <section class="container mt-4">
           <div class="row d-flex justify-content-between m-x-auto">
-            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 18rem;">
+            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 23rem;">
               <img class="card-img-top" src="img/r2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -105,7 +101,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-sm-8 col-lg-4 " style="width: 18rem;">
+            <div class="mx-auto card col-sm-8 col-lg-4 " style="width: 23rem;">
               <img class="card-img-top" src="img/r1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -113,7 +109,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 18rem;">
+            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 23rem;">
               <img class="card-img-top" src="img/r3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -123,33 +119,213 @@
             </div>
           </div>
         </section>
+        <!-- example of collapse not working -->
+
+
+
 
         <!-- more products -->
 
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-  <div class="collapse" id="collapseExample">
-      <h1> Hello World</h1>
-    </div>
-
-
-
-
-      <div  class="jumbotron" style="background-image: url(img/banner.jpg)"height="300">
-          <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+        <section class="container mt-4 collapse" id="collapseExample">
+          <div class="row d-flex justify-content-between m-x-auto">
+            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 23rem;">
+              <img class="card-img-top" src="img/r4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="mx-auto card col-sm-8 col-lg-4 " style="width: 23rem;">
+              <img class="card-img-top" src="img/r5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-sm-4 d-sm-none d-lg-block" style="width: 23rem;">
+              <img class="card-img-top" src="img/r6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-primary text-center mt-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More</button>
         </div>
 
 
+            <h1 class="text-center">Sign up for exclusive offers</h1>
+            <div class="input-group mb-3 ">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+            </div>
 
+        <!-- Footer -->
+      <footer class="page-footer font-small bg-prime">
+
+        <div class="font">
+          <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Get connected with us on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-centertext-md-right">
+
+                <!-- Facebook -->
+                <a class="fb-ic ">
+                  <i class="fab fa-facebook mr-4"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container font text-center text-md-left pt-4 pt-md-5">
+
+          <!-- Grid row -->
+          <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+              <!-- Links -->
+              <h5>About me</h5>
+              <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+              <p class="foot-desc mb-0">Here you can use rows and columns to organize your footer content. Lorem
+                ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+              <!-- Links -->
+              <h5>Products</h5>
+              <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+              <ul class="list-unstyled foot-desc">
+                <li class="mb-2">
+                  <a href="#!">MDBootstrap</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">MDWordPress</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">BrandFlow</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Bootstrap Angular</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+              <!-- Links -->
+              <h5>Useful links</h5>
+              <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+              <ul class="list-unstyled foot-desc">
+                <li class="mb-2">
+                  <a href="#!">Your Account</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Become an Affiliate</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Shipping Rates</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Help</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+              <!-- Links -->
+              <h5>Contacts</h5>
+              <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+              <ul class="fa-ul foot-desc ml-4">
+                <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>New York, Avenue Street 10
+                </li>
+                <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 876 836 908</li>
+                <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>company@example.com</li>
+                <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Friday: 10-17</li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+
+      </footer>
+<!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/36d67a1c60.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 
 </html>

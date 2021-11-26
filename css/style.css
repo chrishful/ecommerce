@@ -7,3 +7,42 @@
 .star{
 	transform:scale(.5);
 }
+.bg-prime{
+	background-color:purple;
+}
+.font{
+	font-family: 'Gluten', cursive;
+	color: #DDB91D !important;
+	font-size:2.5ch;
+}
+.font-3{
+	font-family: 'Gluten', cursive;
+	color: #DDB91D !important;
+	font-size:5ch;
+}
+.btn{
+	color: white ;
+	background-color: purple;
+
+}
+a{
+	color: #DDB91D;
+
+}
+a:hover{
+	color: white ;
+
+}
+.fixed-top{
+	top:20px;
+}
+.counter{
+	position:fixed;
+	right:24px;
+	top:26px;
+	font-size: 2ch;
+	color:white !important;
+}
+.ham{
+	margin-right:5em;
+}
