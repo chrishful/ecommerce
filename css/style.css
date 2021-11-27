@@ -15,6 +15,15 @@
 	color: #DDB91D !important;
 	font-size:2.5ch;
 }
+.purpurse{
+	font-family: 'Lato', sans-serif;
+}
+.font-2{
+	   font-family: 'Purple Purse', cursive;
+			font-size:2.5ch;
+
+
+}
 .font-3{
 	font-family: 'Gluten', cursive;
 	color: #DDB91D !important;
@@ -23,7 +32,7 @@
 .btn{
 	color: white ;
 	background-color: purple;
-
+font-family: 'Lato', sans-serif;
 }
 a{
 	color: #DDB91D;
@@ -35,6 +44,7 @@ a:hover{
 }
 .fixed-top{
 	top:20px;
+	
 }
 .counter{
 	position:fixed;
