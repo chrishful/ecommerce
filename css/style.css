@@ -4,6 +4,7 @@
 	padding:100px;
 	color:white;
 }
+
 .star{
 	transform:scale(.5);
 }
@@ -12,21 +13,37 @@
 }
 .font{
 	font-family: 'Gluten', cursive;
-	color: #DDB91D !important;
+	color: #f9ff4f !important;
 	font-size:2.5ch;
+}
+.font-lg{
+	font-size:3ch;
+	font-family: 'Gluten', cursive;
+	color: purple !important;
+}
+.font-xlg{
+	font-size:5ch;
+	font-family: 'Gluten', cursive;
+	color: purple !important;
+}
+}
+.font-small{
+	font-size:2ch;
+
 }
 .purpurse{
 	font-family: 'Lato', sans-serif;
+	color: #f9ff4f !important;
 }
 .font-2{
 	   font-family: 'Purple Purse', cursive;
 			font-size:2.5ch;
-
-
 }
+.font-2-sm{
+	font-family: 'Lato', sans-serif;}
 .font-3{
 	font-family: 'Gluten', cursive;
-	color: #DDB91D !important;
+	color: #f9ff4f !important;
 	font-size:5ch;
 }
 .btn{
@@ -35,7 +52,7 @@
 font-family: 'Lato', sans-serif;
 }
 a{
-	color: #DDB91D;
+	color: #f9ff4f;
 
 }
 a:hover{
@@ -44,7 +61,6 @@ a:hover{
 }
 .fixed-top{
 	top:20px;
-	
 }
 .counter{
 	position:fixed;
@@ -55,4 +71,38 @@ a:hover{
 }
 .ham{
 	margin-right:5em;
+}
+.fadein{
+	animation: fadein 2s;
+
+}
+@keyframes fadein{
+	0% {
+		 transform: scale(.5);
+	}
+	30% {
+	}
+	45% {
+	}
+	60% {
+	}
+	75% {
+	}
+	95% {
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.px-10{
+	padding: 100px;
+	padding-right: 100px;
+}
+body{
+	background-color:#fcffb3;
+}
+.card{
+	background-color:#e0afd7;
+	padding-top:10px;
 }
