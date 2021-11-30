@@ -26,7 +26,6 @@
 	font-family: 'Gluten', cursive;
 	color: purple !important;
 }
-}
 .font-small{
 	font-size:2ch;
 
@@ -72,29 +71,6 @@ a:hover{
 .ham{
 	margin-right:5em;
 }
-.fadein{
-	animation: fadein 2s;
-
-}
-@keyframes fadein{
-	0% {
-		 transform: scale(.5);
-	}
-	30% {
-	}
-	45% {
-	}
-	60% {
-	}
-	75% {
-	}
-	95% {
-		transform: scale(1.1);
-	}
-	100%{
-		transform: scale(1);
-	}
-}
 .px-10{
 	padding: 100px;
 	padding-right: 100px;
@@ -105,4 +81,21 @@ body{
 .card{
 	background-color:#e0afd7;
 	padding-top:10px;
+}
+
+/* testing scroll  */
+.fadein{
+	animation: fadein 2s;} /*
+.fadein:not([data-scroll='0']) {display:none;}
+.fadein{
+	display:inline-block;
+	animation: fadein 2s;}
+*/
+@keyframes fadein{
+0% {
+		 transform: scale(.5);}
+	95% {
+		transform: scale(1.1);}
+	100%{
+		transform: scale(1);}
 }
