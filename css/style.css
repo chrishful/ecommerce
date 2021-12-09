@@ -1,3 +1,9 @@
+#shoppingCart{
+	position:fixed;
+	top:25px;
+	right:10px;
+}
+
 .jumbotron{
 	height:70vh;
 	background-size:cover;
@@ -64,7 +70,7 @@ a:hover{
 .counter{
 	position:fixed;
 	right:24px;
-	top:26px;
+	top:20px;
 	font-size: 2ch;
 	color:white !important;
 }
